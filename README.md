@@ -1,9 +1,35 @@
 # Data Science Cookie Cutter Project Template Generator
 A cookie cutter project template generator is a tool which generates a project file and directory structure template so that you don't have to do this from scratch every time. They are great time savers, and also help remind you to create all the little bits, such as README.md's and LICENSE.md's that might otherwise get overlooked.
 
-**When creating a new repository on GitHub, do not initialize the new repository with README, license, or gitignore files.**
+**When creating a new repository on GitHub, do not initialize the new repository with README, license, or gitignore files. Create a repository with only name.** 
 
-## Folder Structure
+**$**  Enter the directory where you want to initialize the project.
+
+* Enter the location where you want to initialize the project or leave blank to initialize in the present working directory.
+
+**$**  Enter the project name
+
+* Enter the project name.
+
+**$**  Enter the link for the initialised GitHub repository
+
+* Enter the link if you want version control for the project or else leave blank
+
+**$**  Enter a description for the project
+
+* Enter a description for the project to initialise README.md
+
+**$**  Select LICENSE
+
+* Enter the number corresponding to each LICENSE type:
+	1.	Apache 2.0
+	2. GNU
+	3. MIT License
+	4. None
+
+
+
+## Structure of the folder created
 
 ```
 .
@@ -20,3 +46,8 @@ A cookie cutter project template generator is a tool which generates a project f
 4 directories, 5 files
 
 ```
+
+
+**Developed by** - Avinash Prabhakaran
+
+**Date** - 16/11/2017

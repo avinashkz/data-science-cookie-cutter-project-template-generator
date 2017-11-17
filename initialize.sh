@@ -1,7 +1,7 @@
 #!/bin/bash
     
 #If empty create in current folder else cd to the provided location
-echo -e "Enter the directory where you want to initialize the project. \nDefault is your present working directory"
+echo -e "Enter the directory where you want to initialize the project. \nLeave blank to create in your present working directory"
 read loc
 if [ -n "$loc" ]; then
     cd $loc
