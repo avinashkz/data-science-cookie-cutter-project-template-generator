@@ -1,24 +1,24 @@
-#! /bin/bash
+#!/bin/bash
     
-#if empty create in current folder else cd to the provided location
+#If empty create in current folder else cd to the provided location
 echo -e "Enter the directory where you want to initialize the project. \nDefault is your present working directory"
 read loc
 if [ -n "$loc" ]; then
     cd $loc
 fi
 
-#create the project file
+#Create the project file
 echo "Enter the project name"
 read pname
 mkdir $pname
 
-#move into the project file
+#cd into the project file
 cd $pname
 
-#create the data,docs, results and src folders
+#Create the data, docs, results and src folders
 mkdir data
 cd data
-echo "All the raw data are stored in this folder." > README.md
+echo "All the raw data is stored in this folder." > README.md
 cd ..
 
 mkdir doc
@@ -36,24 +36,23 @@ cd src
 echo "All the execution files and processed data are stored in this folder." > README.md
 cd ..
 
-# ask if you want to initialise in git
-    #If yes, then ask for the link -> then add,commit and push
+# Initialise in git
 echo "Enter the link for the initialised GitHub repo"
 read link
 if [ -n "$link" ]; then
     git init >/dev/null
     git add . >/dev/null
     git commit -m "Initializing" >/dev/null
-    git remote add origin $link
-    git push -u origin master
+    git remote add origin $link >/dev/null 2>/dev/null
+    git push -u origin master >/dev/null 2>/dev/null
 fi || echo "Could not initialise repo"
     
-#Create a readme.md file with the description 
+#Create a README.md file with the description 
 echo "Enter a description for the project"
 read desc
 echo $desc > README.md
 
-#Create a license if one of the licenses are selected
+#Create a LICENSE if one of the licenses are selected
 echo -e "Enter the number for the license you would like to add: \n1. Apache License 2.0 \n2. GNU General Public License v3.0 \n3. MIT License \n4. None"
 read lisc
 if (($lisc == 1))
@@ -67,7 +66,7 @@ then
     curl -L https://raw.githubusercontent.com/avinashkz/data-science-cookie-cutter-project-template-generator/master/licenses/gnu.txt > LICENSE 2>/dev/null
 fi
 
-#If the user had initialised git then add, commit and push
+#If the user had initialised git then push
 if [ -n "$link" ]; then
     git add . >/dev/null 2>/dev/null
     git commit -m "First commit" >/dev/null 2>/dev/null
