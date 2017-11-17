@@ -17,24 +17,30 @@ cd $pname
 
 #Create the data, docs, results and src folders
 mkdir data
-cd data
-echo "All the raw data is stored in this folder." > README.md
-cd ..
+#cd data
+#echo "All the raw data is stored in this folder." > README.md
+#cd ..
 
 mkdir doc
-cd doc
-echo "All the documents are stored in this folder." > README.md
-cd ..
+#cd doc
+#echo "All the documents are stored in this folder." > README.md
+#cd ..
 
 mkdir results
-cd results
-echo "All the results are stored in this folder." > README.md
-cd ..
+#cd results
+#echo "All the results are stored in this folder." > README.md
+#cd ..
 
 mkdir src
-cd src
-echo "All the execution files and processed data are stored in this folder." > README.md
-cd ..
+#cd src
+#echo "All the execution files and processed data are stored in this folder." > README.md
+#cd ..
+
+mkdir bin
+
+touch CITATION.md
+touch CONTRIBUTING.md
+touch CONDUCT.md
 
 # Initialise in git
 echo "Enter the link for the initialised GitHub repo"
