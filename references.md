@@ -17,3 +17,5 @@
 	[8] https://stackoverflow.com/questions/617182/with-bash-scripting-how-can-i-suppress-all-output-from-a-command
 
 	[9] https://help.github.com/enterprise/2.11/admin/articles/license-files/
+	
+	[10] https://stackoverflow.com/questions/4181861/src-refspec-master-does-not-match-any-when-pushing-commits-in-git

@@ -16,10 +16,25 @@ mkdir $pname
 cd $pname
 
 #create the data,docs, results and src folders
-#mkdir data
-#mkdir doc
-#mkdir results
-#mkdir src
+mkdir data
+cd data
+echo "All the raw data are stored in this folder." > README.md
+cd ..
+
+mkdir doc
+cd doc
+echo "All the documents are stored in this folder." > README.md
+cd ..
+
+mkdir results
+cd results
+echo "All the results are stored in this folder." > README.md
+cd ..
+
+mkdir src
+cd src
+echo "All the execution files and processed data are stored in this folder." > README.md
+cd ..
 
 # ask if you want to initialise in git
     #If yes, then ask for the link -> then add,commit and push
@@ -30,13 +45,13 @@ if [ -n "$link" ]; then
     git add . >/dev/null
     git commit -m "Initializing" >/dev/null
     git remote add origin $link
-    git push -u origin master 
+    git push -u origin master
 fi || echo "Could not initialise repo"
     
 #Create a readme.md file with the description 
 echo "Enter a description for the project"
 read desc
-echo $desc > READ.md
+echo $desc > README.md
 
 #Create a license if one of the licenses are selected
 echo -e "Enter the number for the license you would like to add: \n1. Apache License 2.0 \n2. GNU General Public License v3.0 \n3. MIT License \n4. None"
