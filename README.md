@@ -3,23 +3,25 @@ A cookie cutter project template generator is a tool which generates a project f
 
 **Note : When creating a new repository on GitHub, do not initialize the new repository with README, license, or gitignore files. Create a repository with only name.** 
 
-**echo$**  Enter the directory where you want to initialize the project.
+##Required Inputs:
+
+**root$**  Enter the directory where you want to initialize the project.
 
 * Enter the location where you want to initialize your project or leave blank to initialize in the present working directory.
 
-**echo$**  Enter the project name
+**root$**  Enter the project name
 
 * Enter your project name.
 
-**echo$**  Enter the link for the initialised GitHub repository.
+**root$**  Enter the link for the initialised GitHub repository.
 
 * Enter a new github repository link if you want version control for the project or else leave blank
 
-**echo$**  Enter a description for the project.
+**root$**  Enter a description for the project.
 
 * Enter a description for your project to initialise README.md file.
 
-**echo$**  Select a LICENSE for your project.
+**root$**  Select a LICENSE for your project.
 
 * Select the number corresponding to each LICENSE type you want to use:
 	1.	Apache 2.0

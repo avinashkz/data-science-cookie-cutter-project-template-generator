@@ -43,7 +43,7 @@ touch CONTRIBUTING.md
 touch CONDUCT.md
 
 # Initialise in git
-echo "Enter the link for the initialised GitHub repo"
+echo "Enter the link for the initialised GitHub repository"
 read link
 if [ -n "$link" ]; then
     git init >/dev/null
