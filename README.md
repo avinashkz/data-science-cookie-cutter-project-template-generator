@@ -3,7 +3,7 @@ A cookie cutter project template generator is a tool which generates a project f
 
 **Note : When creating a new repository on GitHub, do not initialize the new repository with README, license, or gitignore files. Create a repository with only name.** 
 
-##Required Inputs:
+## Required Inputs:
 
 **root$**  Enter the directory where you want to initialize the project.
 
@@ -24,7 +24,7 @@ A cookie cutter project template generator is a tool which generates a project f
 **root$**  Select a LICENSE for your project.
 
 * Select the number corresponding to each LICENSE type you want to use:
-	1.	Apache 2.0
+	1. Apache 2.0
 	2. GNU
 	3. MIT License
 	4. None
